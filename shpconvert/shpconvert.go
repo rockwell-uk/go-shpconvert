@@ -4,19 +4,17 @@ import (
 	"fmt"
 
 	"github.com/rockwell-uk/shapefile/shp"
-
 	"github.com/twpayne/go-geom"
 	"github.com/twpayne/go-geom/encoding/wkb"
 	"github.com/twpayne/go-geom/encoding/wkt"
 )
 
 func ShpToWKB(s shp.Shape) ([]byte, error) {
-
 	var funcName string = "shpconvert.ShpToWKB"
 
 	r, err := getGeom(s)
 	if err != nil {
-		return []byte{}, fmt.Errorf("%v: %v", funcName, err)
+		return []byte{}, fmt.Errorf("%v: %v", funcName, err.Error())
 	}
 
 	switch w := r.(type) {
@@ -34,12 +32,11 @@ func ShpToWKB(s shp.Shape) ([]byte, error) {
 }
 
 func ShpToWKT(s shp.Shape) (string, error) {
-
 	var funcName string = "shpconvert.ShpToWKT"
 
 	r, err := getGeom(s)
 	if err != nil {
-		return "", fmt.Errorf("%v: %v", funcName, err)
+		return "", fmt.Errorf("%v: %v", funcName, err.Error())
 	}
 
 	switch w := r.(type) {
@@ -57,7 +54,6 @@ func ShpToWKT(s shp.Shape) (string, error) {
 }
 
 func getGeom(s shp.Shape) (interface{}, error) {
-
 	var funcName string = "shpconvert.getGeom"
 
 	var r interface{}
@@ -95,7 +91,6 @@ func getGeom(s shp.Shape) (interface{}, error) {
 }
 
 func addLinearPoints(r *geom.LineString, points []shp.Point) *geom.LineString {
-
 	coords := []geom.Coord{}
 
 	for _, pt := range points {
@@ -108,7 +103,6 @@ func addLinearPoints(r *geom.LineString, points []shp.Point) *geom.LineString {
 }
 
 func addPolygonPoints(r *geom.Polygon, points []shp.Point, parts []int32, numParts int32) *geom.Polygon {
-
 	var allcoords [][]geom.Coord
 	var startIndex, endIndex int32
 

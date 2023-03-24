@@ -14,7 +14,6 @@ import (
 
 //nolint:dupl
 func TestShpToWKB(t *testing.T) {
-
 	tests := map[string]struct {
 		shapeFile      string
 		expectedValues map[int]string
