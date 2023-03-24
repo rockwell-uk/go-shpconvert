@@ -98,9 +98,9 @@ linters-settings:
     sections:
     - standard
     - default
-    - prefix(csync,github.com/rockwell-uk/csync)
+    - prefix(go-shpconvert,github.com/rockwell-uk/go-shpconvert)
   goimports:
-    local-prefixes: csync,github.com/rockwell-uk/csync
+    local-prefixes: go-shpconvert,github.com/rockwell-uk/go-shpconvert
 
 issues:
   exclude-rules:
