@@ -4,6 +4,6 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/rockwell-uk/shapefile v1.0.0 h1:YK4bWxsM3i/9cA7HCHSPBwT7JfxghxXxW3pmuCr6tG0=
 github.com/rockwell-uk/shapefile v1.0.0/go.mod h1:3yAchDf1V+MtUTwHtzuPTsp1K8D6kuvmedpWo6HSDfk=
 github.com/stretchr/testify v1.8.1 h1:w7B6lhMri9wdJUVmEZPGGhZzrYTPvgJArz7wNPgYKsk=
-github.com/twpayne/go-geom v1.5.1 h1:8MmGNqjDaepxHqA2/J2AftwxKzzCXmQx1gX+syYctyA=
-github.com/twpayne/go-geom v1.5.1/go.mod h1:Ixuwq8wG6UqI/udYOkKFHJIktCHN0yCozVDng4rYQUQ=
+github.com/twpayne/go-geom v1.5.2 h1:LyRfBX2W0LM7XN/bGqX0XxrJ7SZc3XwmxU4aj4kSoxw=
+github.com/twpayne/go-geom v1.5.2/go.mod h1:3z6O2sAnGtGCXx4Q+5nPOLCA5e8WI2t3cthdb1P2HH8=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
